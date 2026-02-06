@@ -1,0 +1,345 @@
+{
+  "timestamp": "2026-02-06T12:47:47.894Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-06T12:35:00.000Z",
+    "activeFeatures": [
+      "ai-analysis",
+      "auto-scheduler",
+      "scripts",
+      "config",
+      "ai",
+      "collectors",
+      "scheduler",
+      "sync",
+      "analyze"
+    ],
+    "primaryFeature": null,
+    "features": {
+      "ai-analysis": {
+        "phase": "completed",
+        "phaseNumber": 6,
+        "matchRate": 100,
+        "iterationCount": 0,
+        "requirements": [
+          "FR-05-01: Ollama 연동",
+          "FR-05-02: 피드 요약",
+          "FR-05-03: 키워드 추출",
+          "FR-05-04: 잠재력 평가",
+          "FR-05-06: 분석 결과 저장",
+          "FR-05-07: UI 표시"
+        ],
+        "documents": {
+          "plan": "docs/01-plan/features/ai-analysis.plan.md",
+          "design": "docs/02-design/features/ai-analysis.design.md",
+          "analysis": "docs/03-analysis/ai-analysis.analysis.md",
+          "report": "docs/04-report/features/ai-analysis.report.md"
+        },
+        "timestamps": {
+          "started": "2026-02-06T11:45:00.000Z",
+          "lastUpdated": "2026-02-06T13:30:00.000Z",
+          "completedAt": "2026-02-06T13:30:00.000Z"
+        },
+        "parentFeature": "find-idea"
+      },
+      "auto-scheduler": {
+        "phase": "completed",
+        "phaseNumber": 6,
+        "matchRate": 98.7,
+        "iterationCount": 0,
+        "requirements": [
+          "FR-SCHED-01: 스케줄 설정",
+          "FR-SCHED-02: 백그라운드 실행",
+          "FR-SCHED-03: 수집 결과 로깅",
+          "FR-SCHED-04: 스케줄러 ON/OFF",
+          "FR-SCHED-05: 수집 완료 알림"
+        ],
+        "documents": {
+          "plan": "docs/01-plan/features/auto-scheduler.plan.md",
+          "design": "docs/02-design/features/auto-scheduler.design.md",
+          "analysis": "docs/03-analysis/auto-scheduler.analysis.md",
+          "report": "docs/04-report/features/auto-scheduler.report.md"
+        },
+        "timestamps": {
+          "started": "2026-02-06T14:30:00.000Z",
+          "lastUpdated": "2026-02-06T17:00:00.000Z",
+          "completedAt": "2026-02-06T17:00:00.000Z"
+        },
+        "parentFeature": "find-idea"
+      },
+      "scripts": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:14:22.743Z",
+          "lastUpdated": "2026-02-06T12:14:22.743Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\scripts\\seed-channels.ts"
+      },
+      "config": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:23:50.627Z",
+          "lastUpdated": "2026-02-06T12:23:50.627Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\src\\lib\\config\\index.ts"
+      },
+      "ai": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:24:04.768Z",
+          "lastUpdated": "2026-02-06T12:25:24.072Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\src\\lib\\services\\ai\\index.ts"
+      },
+      "collectors": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:26:23.741Z",
+          "lastUpdated": "2026-02-06T12:27:38.567Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\src\\lib\\services\\collectors\\index.ts"
+      },
+      "scheduler": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:28:12.296Z",
+          "lastUpdated": "2026-02-06T12:28:19.021Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\src\\lib\\scheduler\\scheduler.service.ts"
+      },
+      "sync": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:28:35.296Z",
+          "lastUpdated": "2026-02-06T12:28:35.296Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\src\\app\\api\\sync\\route.ts"
+      },
+      "analyze": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-06T12:29:05.443Z",
+          "lastUpdated": "2026-02-06T12:29:05.443Z"
+        },
+        "lastFile": "C:\\Users\\assag\\solution\\find-idea\\src\\app\\api\\analyze\\route.ts"
+      }
+    },
+    "archived": {
+      "product-ideation": {
+        "phase": "archived",
+        "archivedAt": "2026-02-06T11:15:00.000Z",
+        "archivedTo": "docs/archive/2026-02/product-ideation/",
+        "note": "find-idea로 이름 변경됨"
+      },
+      "naming-unification": {
+        "phase": "archived",
+        "matchRate": 100,
+        "archivedAt": "2026-02-06T12:00:00.000Z",
+        "note": "프로젝트 네이밍 통일 작업 완료"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": [
+        "plan",
+        "design",
+        "do",
+        "check",
+        "act",
+        "report"
+      ]
+    },
+    "session": {
+      "startedAt": "2026-02-06T11:20:00.000Z",
+      "onboardingCompleted": true,
+      "lastActivity": "2026-02-06T12:29:05.443Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-06T00:00:00.000Z",
+        "feature": "find-idea",
+        "phase": "completed",
+        "action": "PDCA cycle complete",
+        "matchRate": 99
+      },
+      {
+        "timestamp": "2026-02-06T13:30:00.000Z",
+        "feature": "ai-analysis",
+        "phase": "completed",
+        "action": "PDCA cycle complete",
+        "matchRate": 100
+      },
+      {
+        "timestamp": "2026-02-06T14:30:00.000Z",
+        "feature": "auto-scheduler",
+        "phase": "plan",
+        "action": "Plan document created"
+      },
+      {
+        "timestamp": "2026-02-06T15:00:00.000Z",
+        "feature": "auto-scheduler",
+        "phase": "design",
+        "action": "Design document created"
+      },
+      {
+        "timestamp": "2026-02-06T16:00:00.000Z",
+        "feature": "auto-scheduler",
+        "phase": "do",
+        "action": "Implementation completed"
+      },
+      {
+        "timestamp": "2026-02-06T16:30:00.000Z",
+        "feature": "auto-scheduler",
+        "phase": "check",
+        "action": "Gap analysis completed",
+        "matchRate": 98.7
+      },
+      {
+        "timestamp": "2026-02-06T17:00:00.000Z",
+        "feature": "auto-scheduler",
+        "phase": "completed",
+        "action": "PDCA cycle complete",
+        "matchRate": 98.7
+      },
+      {
+        "timestamp": "2026-02-06T12:14:22.743Z",
+        "feature": "scripts",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:23:50.627Z",
+        "feature": "config",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:24:04.768Z",
+        "feature": "ai",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:24:28.643Z",
+        "feature": "ai",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:24:53.420Z",
+        "feature": "ai",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:25:18.314Z",
+        "feature": "ai",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:25:24.072Z",
+        "feature": "ai",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:25:51.915Z",
+        "feature": "find-idea",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:26:05.190Z",
+        "feature": "find-idea",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:26:23.741Z",
+        "feature": "collectors",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:26:48.100Z",
+        "feature": "collectors",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:27:19.267Z",
+        "feature": "collectors",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:27:38.567Z",
+        "feature": "collectors",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:28:12.296Z",
+        "feature": "scheduler",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:28:19.021Z",
+        "feature": "scheduler",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:28:35.296Z",
+        "feature": "sync",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-06T12:29:05.443Z",
+        "feature": "analyze",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import type { Channel } from '@/types';
+import { SchedulerPanel, SchedulerLogs } from '@/components/settings';
 
 export default function SettingsPage() {
   const [channels, setChannels] = useState<Channel[]>([]);
@@ -66,6 +67,12 @@ export default function SettingsPage() {
   return (
     <div className="max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold text-gray-900 mb-6">Settings</h2>
+
+      {/* Auto Scheduler */}
+      <div className="mb-6">
+        <SchedulerPanel />
+        <SchedulerLogs />
+      </div>
 
       {/* Stats */}
       <div className="bg-white rounded-lg border p-6 mb-6">

@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-02-06T11:24:55.416Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-06T12:00:00.000Z",
+    "activeFeatures": [
+      "find-idea",
+      "ai-analysis"
+    ],
+    "primaryFeature": "find-idea",
+    "features": {
+      "find-idea": {
+        "phase": "completed",
+        "phaseNumber": 6,
+        "matchRate": 99,
+        "iterationCount": 1,
+        "requirements": [
+          "FR-01: 자동 수집",
+          "FR-02: 데이터 저장",
+          "FR-03: 아이디어 기록",
+          "FR-04: 뷰어/대시보드",
+          "FR-06: 스마트 필터링",
+          "FR-08: 파이프라인",
+          "FR-11: 내보내기/백업"
+        ],
+        "documents": {
+          "plan": "docs/01-plan/features/find-idea.plan.md",
+          "design": "docs/02-design/features/find-idea.design.md",
+          "analysis": "docs/03-analysis/find-idea.analysis.md",
+          "report": "docs/04-report/features/find-idea.report.md"
+        },
+        "timestamps": {
+          "started": "2026-02-06T00:00:00.000Z",
+          "lastUpdated": "2026-02-06T12:00:00.000Z"
+        }
+      },
+      "ai-analysis": {
+        "phase": "plan",
+        "phaseNumber": 1,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [
+          "FR-05-01: Ollama 연동",
+          "FR-05-02: 피드 요약",
+          "FR-05-03: 키워드 추출",
+          "FR-05-04: 잠재력 평가",
+          "FR-05-06: 분석 결과 저장",
+          "FR-05-07: UI 표시"
+        ],
+        "documents": {
+          "plan": "docs/01-plan/features/ai-analysis.plan.md"
+        },
+        "timestamps": {
+          "started": "2026-02-06T11:45:00.000Z",
+          "lastUpdated": "2026-02-06T11:45:00.000Z"
+        },
+        "parentFeature": "find-idea"
+      }
+    },
+    "archived": {
+      "product-ideation": {
+        "phase": "archived",
+        "archivedAt": "2026-02-06T11:15:00.000Z",
+        "archivedTo": "docs/archive/2026-02/product-ideation/",
+        "note": "find-idea로 이름 변경됨"
+      },
+      "naming-unification": {
+        "phase": "archived",
+        "matchRate": 100,
+        "archivedAt": "2026-02-06T12:00:00.000Z",
+        "note": "프로젝트 네이밍 통일 작업 완료"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": [
+        "plan",
+        "design",
+        "do",
+        "check",
+        "act",
+        "report"
+      ]
+    },
+    "session": {
+      "startedAt": "2026-02-06T11:20:00.000Z",
+      "onboardingCompleted": true,
+      "lastActivity": "2026-02-06T12:00:00.000Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-06T00:00:00.000Z",
+        "feature": "find-idea",
+        "phase": "completed",
+        "action": "PDCA cycle complete",
+        "matchRate": 99
+      },
+      {
+        "timestamp": "2026-02-06T11:35:00.000Z",
+        "feature": "naming-unification",
+        "phase": "check",
+        "action": "completed",
+        "matchRate": 100
+      },
+      {
+        "timestamp": "2026-02-06T11:45:00.000Z",
+        "feature": "ai-analysis",
+        "phase": "plan",
+        "action": "created"
+      },
+      {
+        "timestamp": "2026-02-06T12:00:00.000Z",
+        "feature": "find-idea",
+        "phase": "completed",
+        "action": "documents updated with new naming"
+      }
+    ]
+  }
+}

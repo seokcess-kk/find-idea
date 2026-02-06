@@ -87,3 +87,61 @@ export interface SyncResponse {
     duplicates: number;
   };
 }
+
+// AI Analysis 타입
+export type AnalysisStatus = 'pending' | 'analyzing' | 'completed' | 'failed';
+
+export interface FeedAnalysis {
+  id: string;
+  feedId: string;
+  summary: string | null;
+  keywords: string[];
+  potentialScore: number | null;
+  potentialReason: string | null;
+  modelUsed: string | null;
+  status: AnalysisStatus;
+  errorMessage: string | null;
+  analyzedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+// Legacy: OllamaStatus (deprecated, use AIStatus)
+export interface OllamaStatus {
+  available: boolean;
+  url: string;
+  model: string;
+  models: string[];
+  error?: string;
+}
+
+// AI Provider 타입
+export type AIProviderType = 'ollama' | 'openai';
+
+// AI Provider 상태 (새로운 통합 타입)
+export interface AIStatus {
+  provider: AIProviderType;
+  available: boolean;
+  model: string;
+  models: string[];
+  fallbackEnabled: boolean;
+  fallbackProvider?: AIProviderType;
+  error?: string;
+}
+
+export interface AnalyzeOptions {
+  includeSummary?: boolean;
+  includeKeywords?: boolean;
+  includePotential?: boolean;
+}
+
+export interface AnalyzeRequest {
+  feedId: string;
+  options?: AnalyzeOptions;
+}
+
+export interface AnalyzeResponse {
+  success: boolean;
+  analysis?: FeedAnalysis;
+  error?: string;
+}

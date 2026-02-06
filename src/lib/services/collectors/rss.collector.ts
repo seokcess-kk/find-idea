@@ -1,9 +1,14 @@
+// ===========================================
+// RSS Content Collector
+// ===========================================
+
 import Parser from 'rss-parser';
 import { db } from '@/lib/db';
 import { channels, feeds } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
 import { v4 as uuidv4 } from 'uuid';
 import { SmartFilter } from '@/lib/utils/smart-filter';
+import { BaseCollector, CollectResult } from './base.collector';
 
 const parser = new Parser({
   timeout: 10000,
@@ -12,34 +17,27 @@ const parser = new Parser({
   },
 });
 
-export interface CollectResult {
-  channelId: string;
-  channelName: string;
-  success: boolean;
-  collected: number;
-  duplicates: number;
-  error?: string;
-}
+export class RSSCollector extends BaseCollector {
+  readonly type = 'rss' as const;
 
-export class RSSCollector {
-  private async delay(ms: number): Promise<void> {
-    return new Promise((resolve) => setTimeout(resolve, ms));
+  /**
+   * RSS URL인지 확인
+   */
+  canHandle(url: string): boolean {
+    // Reddit이 아닌 모든 URL은 RSS로 처리
+    return !url.includes('reddit.com');
   }
 
+  /**
+   * 단일 채널에서 RSS 수집
+   */
   async collectFromChannel(channelId: string): Promise<CollectResult> {
     const channel = await db.query.channels.findFirst({
       where: eq(channels.id, channelId),
     });
 
     if (!channel) {
-      return {
-        channelId,
-        channelName: 'Unknown',
-        success: false,
-        collected: 0,
-        duplicates: 0,
-        error: 'Channel not found',
-      };
+      return this.createErrorResult(channelId, 'Unknown', 'Channel not found');
     }
 
     try {
@@ -98,13 +96,7 @@ export class RSSCollector {
         })
         .where(eq(channels.id, channelId));
 
-      return {
-        channelId,
-        channelName: channel.name,
-        success: true,
-        collected,
-        duplicates,
-      };
+      return this.createSuccessResult(channelId, channel.name, collected, duplicates);
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
       const now = new Date().toISOString();
@@ -119,26 +111,24 @@ export class RSSCollector {
         })
         .where(eq(channels.id, channelId));
 
-      return {
-        channelId,
-        channelName: channel.name,
-        success: false,
-        collected: 0,
-        duplicates: 0,
-        error: errorMessage,
-      };
+      return this.createErrorResult(channelId, channel.name, errorMessage);
     }
   }
 
+  /**
+   * 모든 활성 RSS 채널에서 수집
+   */
   async collectAll(): Promise<CollectResult[]> {
     const activeChannels = await db.query.channels.findMany({
       where: eq(channels.isActive, true),
     });
 
+    // RSS 채널만 필터링
+    const rssChannels = activeChannels.filter((ch) => this.canHandle(ch.rssUrl));
     const results: CollectResult[] = [];
 
-    for (const channel of activeChannels) {
-      console.log(`Collecting from ${channel.name}...`);
+    for (const channel of rssChannels) {
+      console.log(`[RSS] Collecting from ${channel.name}...`);
       const result = await this.collectFromChannel(channel.id);
       results.push(result);
 
@@ -149,6 +139,9 @@ export class RSSCollector {
     return results;
   }
 
+  /**
+   * 특정 채널 목록에서 수집
+   */
   async collectFromChannels(channelIds: string[]): Promise<CollectResult[]> {
     const results: CollectResult[] = [];
 
@@ -162,4 +155,5 @@ export class RSSCollector {
   }
 }
 
+// 싱글톤 인스턴스
 export const rssCollector = new RSSCollector();

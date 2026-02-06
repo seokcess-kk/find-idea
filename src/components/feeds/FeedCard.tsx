@@ -2,6 +2,8 @@
 
 import { format } from 'date-fns';
 import type { Feed } from '@/types';
+import { useAnalysis } from '@/hooks/useAnalysis';
+import { AnalysisPanel } from './AnalysisPanel';
 
 interface FeedCardProps {
   feed: Feed;
@@ -12,6 +14,7 @@ interface FeedCardProps {
 
 export function FeedCard({ feed, onRead, onBookmark, onCreateIdea }: FeedCardProps) {
   const keywords = feed.detectedKeywords ? JSON.parse(feed.detectedKeywords) : [];
+  const { analysis, isLoading, error, ollamaStatus, analyze, refresh } = useAnalysis(feed.id);
 
   const handleClick = () => {
     if (!feed.isRead) {
@@ -89,8 +92,20 @@ export function FeedCard({ feed, onRead, onBookmark, onCreateIdea }: FeedCardPro
         </div>
       )}
 
+      {/* AI Analysis Panel */}
+      <div onClick={(e) => e.stopPropagation()}>
+        <AnalysisPanel
+          analysis={analysis}
+          isLoading={isLoading}
+          error={error}
+          ollamaStatus={ollamaStatus}
+          onAnalyze={analyze}
+          onRefresh={refresh}
+        />
+      </div>
+
       {/* Footer */}
-      <div className="flex items-center justify-between text-xs text-gray-500">
+      <div className="flex items-center justify-between text-xs text-gray-500 mt-3">
         <span>
           {format(new Date(feed.collectedAt), 'yyyy-MM-dd HH:mm')}
         </span>

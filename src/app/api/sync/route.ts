@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { rssCollector } from '@/lib/services/rss.collector';
+import { collectorFactory } from '@/lib/services/collectors';
 import { channelService } from '@/lib/services/channel.service';
 
 export async function POST(request: NextRequest) {
@@ -10,11 +10,11 @@ export async function POST(request: NextRequest) {
     let results;
 
     if (channelIds && channelIds.length > 0) {
-      // 특정 채널만 수집
-      results = await rssCollector.collectFromChannels(channelIds);
+      // 특정 채널만 수집 (자동으로 RSS/Reddit 구분)
+      results = await collectorFactory.collectFromChannels(channelIds);
     } else {
-      // 모든 활성 채널 수집
-      results = await rssCollector.collectAll();
+      // 모든 활성 채널 수집 (RSS + Reddit)
+      results = await collectorFactory.collectAll();
     }
 
     const summary = {

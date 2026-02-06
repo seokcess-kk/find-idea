@@ -101,7 +101,7 @@ export const useFilterStore = create<FilterState>()(
       },
     }),
     {
-      name: 'product-ideation-filters',
+      name: 'find-idea-filters',
       partialize: (state) => ({
         feedFilters: state.feedFilters,
         ideaFilters: state.ideaFilters,
