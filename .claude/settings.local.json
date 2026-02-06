@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.producthunt.com)",
+      "WebFetch(domain:www.reddit.com)",
+      "WebFetch(domain:superframeworks.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:gummysearch.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:growthpartners.online)",
+      "Bash(npm run dev:*)",
+      "Bash(netstat:*)",
+      "Bash(npm install:*)",
+      "Bash(taskkill:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

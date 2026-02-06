@@ -1,0 +1,533 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-02-06T00:39:11.910Z",
+  "activeFeatures": [
+    "product-ideation",
+    "db",
+    "feeds",
+    "[id]",
+    "ideas",
+    "channels",
+    "sync",
+    "export",
+    "store",
+    "dashboard",
+    "settings",
+    "validations",
+    "layout"
+  ],
+  "primaryFeature": "product-ideation",
+  "features": {
+    "product-ideation": {
+      "phase": "do",
+      "startedAt": "2026-02-06T10:00:00.000Z",
+      "planPath": "docs/01-plan/features/product-ideation.plan.md",
+      "designPath": "docs/02-design/features/product-ideation.design.md",
+      "tasks": [
+        "plan-product-ideation",
+        "design-product-ideation",
+        "do-product-ideation"
+      ],
+      "phaseNumber": 3,
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\app\\page.tsx",
+      "timestamps": {
+        "lastUpdated": "2026-02-06T00:38:26.660Z"
+      }
+    },
+    "db": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:18:22.864Z",
+        "lastUpdated": "2026-02-06T00:18:50.264Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\lib\\db\\seed.ts"
+    },
+    "feeds": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:20:18.047Z",
+        "lastUpdated": "2026-02-06T00:39:09.387Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\components\\feeds\\index.ts"
+    },
+    "[id]": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:20:33.384Z",
+        "lastUpdated": "2026-02-06T00:21:04.450Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\app\\api\\ideas\\[id]\\route.ts"
+    },
+    "ideas": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:20:42.284Z",
+        "lastUpdated": "2026-02-06T00:39:10.642Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\components\\ideas\\index.ts"
+    },
+    "channels": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:21:13.023Z",
+        "lastUpdated": "2026-02-06T00:21:13.023Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\app\\api\\channels\\route.ts"
+    },
+    "sync": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:21:24.963Z",
+        "lastUpdated": "2026-02-06T00:21:24.963Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\app\\api\\sync\\route.ts"
+    },
+    "export": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:21:38.134Z",
+        "lastUpdated": "2026-02-06T00:21:38.134Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\app\\api\\export\\route.ts"
+    },
+    "store": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:22:05.682Z",
+        "lastUpdated": "2026-02-06T00:37:17.194Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\store\\filterStore.ts"
+    },
+    "dashboard": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:24:36.168Z",
+        "lastUpdated": "2026-02-06T00:39:11.910Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\components\\dashboard\\index.ts"
+    },
+    "settings": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:25:23.080Z",
+        "lastUpdated": "2026-02-06T00:25:23.080Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\app\\settings\\page.tsx"
+    },
+    "validations": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:37:07.902Z",
+        "lastUpdated": "2026-02-06T00:37:07.902Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\lib\\validations\\index.ts"
+    },
+    "layout": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-06T00:38:39.930Z",
+        "lastUpdated": "2026-02-06T00:38:49.563Z"
+      },
+      "lastFile": "C:\\Users\\assag\\solution\\presentation-manager\\product-ideation\\src\\components\\layout\\index.ts"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 3,
+    "level": "Dynamic",
+    "phaseHistory": [
+      "plan",
+      "design"
+    ]
+  },
+  "session": {
+    "startedAt": "2026-02-05T16:52:35.234Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-02-06T00:39:11.910Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-06T00:17:34.202Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:17:42.593Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:17:53.071Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:18:22.864Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:18:30.403Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:18:50.264Z",
+      "feature": "db",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:19:06.197Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:19:24.313Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:19:41.791Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:19:59.408Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:20:08.780Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:20:18.047Z",
+      "feature": "feeds",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:20:33.384Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:20:42.284Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:21:04.450Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:21:13.023Z",
+      "feature": "channels",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:21:24.963Z",
+      "feature": "sync",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:21:38.134Z",
+      "feature": "export",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:21:51.652Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:22:05.682Z",
+      "feature": "store",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:22:20.252Z",
+      "feature": "store",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:22:42.639Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:23:00.529Z",
+      "feature": "feeds",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:23:17.640Z",
+      "feature": "feeds",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:23:40.712Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:23:53.846Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:24:07.019Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:24:22.416Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:24:36.168Z",
+      "feature": "dashboard",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:24:48.356Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:25:02.099Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:25:23.080Z",
+      "feature": "settings",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:25:30.473Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:07.902Z",
+      "feature": "validations",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:17.194Z",
+      "feature": "store",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:31.654Z",
+      "feature": "feeds",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:39.806Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:43.619Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:46.736Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:47.991Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:37:55.379Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:03.129Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:09.344Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:21.555Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:26.660Z",
+      "feature": "product-ideation",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:35.657Z",
+      "feature": "dashboard",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:39.930Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:42.950Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:48.330Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:38:49.563Z",
+      "feature": "layout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:39:08.112Z",
+      "feature": "feeds",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:39:09.387Z",
+      "feature": "feeds",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:39:10.642Z",
+      "feature": "ideas",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-06T00:39:11.910Z",
+      "feature": "dashboard",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}
